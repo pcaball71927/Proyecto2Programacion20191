@@ -4,7 +4,13 @@ def obtener_complemento(base):
 
 
 def generar_cadena_complementaria(adn):
-    pass
+    if not es_cadena_valida(adn):
+        Exception("La cadena de ADN ingresada no es valida")
+    result = ""
+    for caracter in adn:
+        complemento = obtener_complemento(caracter)
+        result = result + complemento
+    return result
 
 
 def calcular_correspondencia(adn1, adn2):
