@@ -19,8 +19,11 @@ def calcular_correspondencia(adn1, adn2):
 
 
 def corresponden(adn1, adn2):
-    # retorna Bool
-    pass
+    cadena_complementaria = generar_cadena_complementaria(adn1)
+    if adn2 == cadena_complementaria:
+        return True
+    else:
+        return False
 
 
 def es_cadena_valida(adn):
