@@ -51,7 +51,11 @@ def obtener_secciones(adn, n):
 
 
 def obtener_complementos(lista_adn):
-    pass
+    lista_complementos = []
+    for adn in lista_adn:
+        complemento_adn = generar_cadena_complementaria(adn)
+        lista_complementos.append(complemento_adn)
+    return lista_complementos
 
 
 def unir_cadena(lista_adn):
