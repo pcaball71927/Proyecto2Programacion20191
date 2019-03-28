@@ -22,7 +22,11 @@ def es_cadena_valida(adn):
 
 
 def es_base(caracter):
-    pass
+
+    if caracter in ["A","T","C","G"]:
+        return True
+    else:
+        return False
 
 
 def es_subcadena(adn1, adn2):
