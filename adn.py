@@ -4,7 +4,24 @@ def obtener_complemento(base):
 
 
 def generar_cadena_complementaria(adn):
-    pass
+    '''
+    (string) -> string
+
+    >>>generar_cadena_complementaria("ATTTCG")
+    "TAAAGC"
+
+    >>>generar_cadena_complementaria("CGTCGA")
+    "GCAGCT"
+
+    >>>generar_cadena_complementaria("CGTX1")
+    "La cadena de ADN ingresada no es valida"
+
+
+    Genera cadena con los complementos de la cadena de ADN ingresada
+    adn = string contiene la cadena de ADN de la cual se requiere obtener la cadena complemento
+
+    return = string retorna la cadena complementaria de la cadena de ADN ingresada
+    '''
 
 
 def calcular_correspondencia(adn1, adn2):
