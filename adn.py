@@ -1,8 +1,20 @@
+bases = ["A","T","C","G"]
 def obtener_complemento(base):
-    # retorna caracter
-    pass
+    """
+     (str) -> str
 
-
+    >>> obtener_complemento('A')
+    'T'
+    >>> obtener_complemento('T')
+    'A'
+    >>> obtener_complemento('C')
+    'G'
+    >>> obtener_complemento('G')
+    'C'
+    :param base: recibe un complemento para definir su base
+   :return: retorna el complemento de la base
+   """
+   
 def generar_cadena_complementaria(adn):
     '''
     (string) -> string
@@ -25,8 +37,9 @@ def generar_cadena_complementaria(adn):
 
 
 def calcular_correspondencia(adn1, adn2):
-    # retorna num
-    pass
+
+
+
 
 
 def corresponden(adn1, adn2):
@@ -35,7 +48,7 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
-    pass
+
 
 
 def es_base(caracter):
