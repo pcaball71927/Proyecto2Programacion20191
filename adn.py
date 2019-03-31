@@ -39,7 +39,11 @@ def es_base(caracter):
 
 
 def es_subcadena(adn1, adn2):
-    pass
+
+    if adn2 in adn1:
+        return True
+    else:
+        return False
 
 
 def reparar_dano(adn, base):
