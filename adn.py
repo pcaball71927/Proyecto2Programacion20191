@@ -1,6 +1,14 @@
 def obtener_complemento(base):
-    # retorna caracter
-    pass
+    if not es_base(base):
+        Exception("No es una base")
+    if base == "A":
+        return "T"
+    Elif base == "T":
+        return "A"
+    Elif base == "C":
+        return "G"
+    Elif base == "G":
+        return "C"    
 
 
 def generar_cadena_complementaria(adn):
