@@ -171,12 +171,26 @@ def obtener_complementos(lista_adn):
     :param lista_adn: string listado de adn de los cuales se busca obtener un listado de complementos
     :return: listado de complementos correspondientes al listado de adn ingresado
     """
-    
+
 
 def unir_cadena(lista_adn):
     pass
 
 
 def complementar_cadenas(lista_adn):
-    pass
+    """
+    (string) -> string
+
+    >>>complementar_cadenas("ATT","TTA")
+    ("TAAAAT")
+    >>>complementar_cadenas("CT","TA","CC")
+    ("GAATGG")
+    >>>complementar_cadenas("1CC","TATA","TA")
+    Traceback (most recent call last):
+    Exception: La cadena de ADN ingresada no es valida
+
+    Obtiene la cadena con los complementos de las cadenas de ADN ingresadas
+    :param Lista_adn: string listado de adn
+    :return: cadena con los complementos de la lista de adn ingresada
+    """
 
