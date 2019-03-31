@@ -10,29 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2fun.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="152">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
             </state>
           </provider>
         </entry>
@@ -52,9 +34,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/adn.py" />
         <option value="$PROJECT_DIR$/gg.py" />
         <option value="$PROJECT_DIR$/2fun.py" />
+        <option value="$PROJECT_DIR$/adn.py" />
       </list>
     </option>
   </component>
@@ -69,17 +51,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Proyecto2Programacion20191" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto2Programacion20191" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -208,10 +180,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.adn" />
         <item itemvalue="Python.2fun" />
         <item itemvalue="Python.gg" />
         <item itemvalue="Python tests.Doctest obtener_complemento" />
-        <item itemvalue="Python.adn" />
       </list>
     </recent_temporary>
   </component>
@@ -229,12 +201,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_obtener_complemento - 2019.03.29 at 00h 33m 31s.xml">
-      <configuration name="Doctest obtener_complemento" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_obtener_complemento - 2019.03.31 at 13h 03m 24s.xml">
-      <configuration name="Doctest obtener_complemento" configurationId="tests" />
-    </history-entry>
     <history-entry file="Doctests_in_ - 2019.03.31 at 13h 05m 31s.xml">
       <configuration name="Doctests in " configurationId="tests" />
     </history-entry>
@@ -257,6 +223,12 @@
       <configuration name="Doctests in " configurationId="tests" />
     </history-entry>
     <history-entry file="Doctests_in_ - 2019.03.31 at 13h 11m 38s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 16h 44m 31s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 17h 23m 55s.xml">
       <configuration name="Doctests in " configurationId="tests" />
     </history-entry>
   </component>
@@ -286,8 +258,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/adn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="152">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>

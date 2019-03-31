@@ -8,11 +8,13 @@ def obtener_complemento(base):
     'A'
     >>> obtener_complemento('C')
     'G'
-    >>> obtener_complemento('G')
-    'C'
+    >>> obtener_complemento('R')
+    Traceback (most recent call last):
+    Exeption: No es una base
+    
     :param base: recibe un complemento para definir su base
-   :return: retorna el complemento de la base
-   """
+    :return: retorna el complemento de la base
+    """
    
 def generar_cadena_complementaria(adn):
     '''
@@ -130,7 +132,18 @@ def reparar_dano(adn, base):
 
 
 def obtener_secciones(adn, n):
-    pass
+     """
+    (str, num) -> list of str
+     >>>obtener_secciones('AATCGAATCC',5)
+    ('AA','TC', 'GA', 'AT', 'CC')
+    >>>obtener_secciones('ATTGCTAAC',3)
+    ('ATT', 'GCT', 'AAC')
+    >>>obtener_secciones('GAGATCTCAGT',2)
+    ('GAGAT', 'CTCAGT')
+    :param adn:cadena de adn
+    :param n: numero de secciones que desea la cadena
+    :return:cadena de adn en secciones
+    """
 
 
 def obtener_complementos(lista_adn):
