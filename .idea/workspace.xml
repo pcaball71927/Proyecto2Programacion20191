@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="152">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
             </state>
           </provider>
         </entry>
@@ -34,9 +34,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/adn.py" />
         <option value="$PROJECT_DIR$/gg.py" />
         <option value="$PROJECT_DIR$/2fun.py" />
+        <option value="$PROJECT_DIR$/adn.py" />
       </list>
     </option>
   </component>
@@ -175,15 +175,15 @@
       <item itemvalue="Python.2fun" />
       <item itemvalue="Python.adn" />
       <item itemvalue="Python.gg" />
-      <item itemvalue="Python tests.Doctest obtener_complemento" />
       <item itemvalue="Python tests.Doctests in " />
+      <item itemvalue="Python tests.Doctest obtener_complemento" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.adn" />
         <item itemvalue="Python.2fun" />
         <item itemvalue="Python.gg" />
         <item itemvalue="Python tests.Doctest obtener_complemento" />
-        <item itemvalue="Python.adn" />
       </list>
     </recent_temporary>
   </component>
@@ -201,12 +201,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_obtener_complemento - 2019.03.29 at 00h 33m 31s.xml">
-      <configuration name="Doctest obtener_complemento" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctest_obtener_complemento - 2019.03.31 at 13h 03m 24s.xml">
-      <configuration name="Doctest obtener_complemento" configurationId="tests" />
-    </history-entry>
     <history-entry file="Doctests_in_ - 2019.03.31 at 13h 05m 31s.xml">
       <configuration name="Doctests in " configurationId="tests" />
     </history-entry>
@@ -229,6 +223,12 @@
       <configuration name="Doctests in " configurationId="tests" />
     </history-entry>
     <history-entry file="Doctests_in_ - 2019.03.31 at 13h 11m 38s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 16h 44m 31s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 17h 23m 55s.xml">
       <configuration name="Doctests in " configurationId="tests" />
     </history-entry>
   </component>
@@ -258,8 +258,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/adn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="152">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
