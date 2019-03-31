@@ -1,4 +1,3 @@
-bases = ["A","T","C","G"]
 def obtener_complemento(base):
     """
      (str) -> str
@@ -27,10 +26,10 @@ def generar_cadena_complementaria(adn):
 
     >>>generar_cadena_complementaria("CGTX1")
     Traceback (most recent call last):
-
+    Exception: La cadena de ADN ingresada no es valida
 
     Genera cadena con los complementos de la cadena de ADN ingresada
-    Exception "La cadena de ADN ingresada no es valida"
+    
     :param adn: string contiene la cadena de ADN de la cual se requiere obtener la cadena complemento
 
     :return: string retorna la cadena complementaria de la cadena de ADN ingresada
@@ -93,11 +92,24 @@ def es_cadena_valida(adn):
     :param adn: String La cadena ingresada a evaluar
     :return: retorna Boolean TRUE si la cadena es valida o FLASE si es incorrecta
     """
-    pass
 
 
 def es_base(caracter):
-    pass
+    """
+    (string) -> bool
+
+    >>>es_base("A")
+    True
+    >>>es_base("x")
+    False
+    >>>es_base("0")
+    False
+    
+    Valida si un caracter ingresado corresponde o no a una base 
+
+    :param caracter: string Caracter ingresado sobre el cual se requiere identificar si corresponde o no a una base
+    :return: retorna boolean TRUE si es una base o False si no lo es
+    """
 
 
 def es_subcadena(adn1, adn2):
@@ -105,6 +117,15 @@ def es_subcadena(adn1, adn2):
 
 
 def reparar_dano(adn, base):
+    """
+    (string, string) -> string
+
+    Repara una cadena de adn de tiene caracteres que no son base reemplazandolos con la base ingresada
+
+    :param adn: string cadena de adn ingresa para que se repare el daño
+    :param base: string base ingresada con la que se reemplazan los caracteres de una cadena de adn considerados como daño
+    :return: retorna string cadena con daños reparados 
+    """
     pass
 
 
