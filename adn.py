@@ -122,24 +122,32 @@ def reparar_dano(adn, base):
     """
     (string, string) -> string
 
+    >>>reparar_dano("ATTTCVG","C")
+    "ATTTCCG"
+    >>>reparar_dano("XXX0TA","C")
+    "CCCCTA"
+    >>>reparar_dano("ATC1","G")
+    "ATCG"
+
     Repara una cadena de adn de tiene caracteres que no son base reemplazandolos con la base ingresada
 
     :param adn: string cadena de adn ingresa para que se repare el daño
     :param base: string base ingresada con la que se reemplazan los caracteres de una cadena de adn considerados como daño
     :return: retorna string cadena con daños reparados 
     """
-    pass
 
 
 def obtener_secciones(adn, n):
      """
     (str, num) -> list of str
+
      >>>obtener_secciones('AATCGAATCC',5)
     ('AA','TC', 'GA', 'AT', 'CC')
     >>>obtener_secciones('ATTGCTAAC',3)
     ('ATT', 'GCT', 'AAC')
     >>>obtener_secciones('GAGATCTCAGT',2)
     ('GAGAT', 'CTCAGT')
+
     :param adn:cadena de adn
     :param n: numero de secciones que desea la cadena
     :return:cadena de adn en secciones
@@ -147,8 +155,23 @@ def obtener_secciones(adn, n):
 
 
 def obtener_complementos(lista_adn):
-    pass
+    """
+    (string) -> string 
 
+    >>>obtener_complementos("ATT","CCAG","AC")
+    ("TAA","GGTC","TG")
+    >>>obtener_complementos("CG","ATT")
+    ("ATT","CCAG","AC")
+    >>>obtener_complementos("TT","CC1")
+    Traceback (most recent call last):
+    Exception: La cadena de ADN ingresada no es valida
+
+    Obtiene lista de complementos para un listado de adn
+
+    :param lista_adn: string listado de adn de los cuales se busca obtener un listado de complementos
+    :return: listado de complementos correspondientes al listado de adn ingresado
+    """
+    
 
 def unir_cadena(lista_adn):
     pass
