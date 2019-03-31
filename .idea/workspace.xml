@@ -13,17 +13,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="57" column="11" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="57" selection-end-column="11" />
+            <state relative-caret-position="870">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gg.py">
+        <entry file="file://$PROJECT_DIR$/2fun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -45,6 +54,7 @@
       <list>
         <option value="$PROJECT_DIR$/adn.py" />
         <option value="$PROJECT_DIR$/gg.py" />
+        <option value="$PROJECT_DIR$/2fun.py" />
       </list>
     </option>
   </component>
@@ -74,7 +84,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2fun.py" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -88,7 +99,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gg">
+  <component name="RunManager" selected="Python tests.Doctests in ">
+    <configuration name="2fun" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2fun.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="adn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Proyecto2Programacion20191" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,8 +181,34 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Doctests in " type="tests" factoryName="Doctests" nameIsGenerated="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\user\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2fun.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.2fun" />
+      <item itemvalue="Python.adn" />
+      <item itemvalue="Python.gg" />
+      <item itemvalue="Python tests.Doctests in " />
+      <item itemvalue="Python tests.Doctest obtener_complemento" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2fun" />
         <item itemvalue="Python.gg" />
         <item itemvalue="Python tests.Doctest obtener_complemento" />
         <item itemvalue="Python.adn" />
@@ -174,18 +232,45 @@
     <history-entry file="Doctest_obtener_complemento - 2019.03.29 at 00h 33m 31s.xml">
       <configuration name="Doctest obtener_complemento" configurationId="tests" />
     </history-entry>
+    <history-entry file="Doctest_obtener_complemento - 2019.03.31 at 13h 03m 24s.xml">
+      <configuration name="Doctest obtener_complemento" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 05m 31s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 06m 26s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 07m 09s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 09m 44s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 10m 01s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 10m 26s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 11m 26s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 11m 38s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49268293" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.50731707" side_tool="true" visible="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -201,15 +286,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/adn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="57" column="11" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="57" selection-end-column="11" />
+        <state relative-caret-position="870">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="105">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2fun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
