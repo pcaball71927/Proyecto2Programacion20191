@@ -14,13 +14,14 @@ def generar_cadena_complementaria(adn):
     "GCAGCT"
 
     >>>generar_cadena_complementaria("CGTX1")
-    "La cadena de ADN ingresada no es valida"
+    Traceback (most recent call last):
 
 
     Genera cadena con los complementos de la cadena de ADN ingresada
-    adn = string contiene la cadena de ADN de la cual se requiere obtener la cadena complemento
+    Exception "La cadena de ADN ingresada no es valida"
+    :param adn: string contiene la cadena de ADN de la cual se requiere obtener la cadena complemento
 
-    return = string retorna la cadena complementaria de la cadena de ADN ingresada
+    :return: string retorna la cadena complementaria de la cadena de ADN ingresada
     '''
 
 
