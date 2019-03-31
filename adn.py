@@ -1,8 +1,20 @@
+bases = ["A","T","C","G"]
 def obtener_complemento(base):
-    # retorna caracter
-    pass
+    """
+     (str) -> str
 
-
+    >>> obtener_complemento('A')
+    'T'
+    >>> obtener_complemento('T')
+    'A'
+    >>> obtener_complemento('C')
+    'G'
+    >>> obtener_complemento('G')
+    'C'
+    :param base: recibe un complemento para definir su base
+   :return: retorna el complemento de la base
+   """
+   
 def generar_cadena_complementaria(adn):
     '''
     (string) -> string
@@ -26,9 +38,25 @@ def generar_cadena_complementaria(adn):
 
 
 def calcular_correspondencia(adn1, adn2):
-    # retorna num
-    pass
-
+    """
+    (str,str)-> num
+    Calcula el porcentaje de correspondencia de 2 cadenas dadas
+    >>> calcular_correspondencia("AT","TA")
+    TA
+    2
+    100.0
+    >>> calcular_correspondencia("CG","GT")
+    GC
+    2
+    50.0
+    >>> calcular_correspondencia("AAA","GCG")
+    TTT
+    3
+    0.0
+    :param adn1: str:primera cadena de adn a comparar para su porcentaje
+    :param adn2: str:segunda cadena recibida para comparar su porcentaje
+    :return:num: retorna el porcentaje total en termino de reales
+    """
 
 def corresponden(adn1, adn2):
     '''
@@ -52,6 +80,19 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
+    """
+    (str)-> boolean
+
+    >>> cadena_valida("ACT")
+    True
+    >>> cadena_valida("XYZ")
+    False
+    >>> cadena_valida("TSG")
+    False
+
+    :param adn: String La cadena ingresada a evaluar
+    :return: retorna Boolean TRUE si la cadena es valida o FLASE si es incorrecta
+    """
     pass
 
 
