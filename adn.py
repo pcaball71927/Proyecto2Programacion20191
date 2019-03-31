@@ -35,7 +35,6 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
-
     for caracter in adn:
         if not es_base():
             return False
@@ -43,7 +42,6 @@ def es_cadena_valida(adn):
         
     
 def es_base(caracter):
-
     if caracter in ["A","T","C","G"]:
         return True
     else:
@@ -88,5 +86,7 @@ def unir_cadena(lista_adn):
 
 
 def complementar_cadenas(lista_adn):
-    pass
+    lista_complementos = obtener_complementos(lista_adn)
+    cadena_complementos = unir_cadena(lista_complementos)
+    return cadena_complementos
 
