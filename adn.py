@@ -1,4 +1,3 @@
-bases = ["A","T","C","G"]
 def obtener_complemento(base):
     """
      (str) -> str
@@ -9,11 +8,13 @@ def obtener_complemento(base):
     'A'
     >>> obtener_complemento('C')
     'G'
-    >>> obtener_complemento('G')
-    'C'
+    >>> obtener_complemento('R')
+    Traceback (most recent call last):
+    Exeption: No es una base
+    
     :param base: recibe un complemento para definir su base
-   :return: retorna el complemento de la base
-   """
+    :return: retorna el complemento de la base
+    """
    
 def generar_cadena_complementaria(adn):
     '''
