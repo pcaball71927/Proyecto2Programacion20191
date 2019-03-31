@@ -43,7 +43,16 @@ def es_subcadena(adn1, adn2):
 
 
 def reparar_dano(adn, base):
-    pass
+    if not es_base(base):
+        Exception("La base ingresada para reparar dano no es una base")
+    reparado = ""
+    for caracter in adn:
+        if es_base(caracter):
+            reparado = reparado + caracter
+        else:
+            reparado = reparado + base
+    return reparado
+
 
 
 def obtener_secciones(adn, n):
