@@ -27,9 +27,13 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
-    pass
 
-
+    for caracter in adn:
+        if not es_base():
+            return False
+    return True    
+        
+    
 def es_base(caracter):
 
     if caracter in ["A","T","C","G"]:
