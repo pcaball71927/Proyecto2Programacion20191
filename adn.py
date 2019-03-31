@@ -82,9 +82,13 @@ def obtener_complementos(lista_adn):
 
 
 def unir_cadena(lista_adn):
-    pass
+    resultado_cadena = ""
+    for cadena in lista_adn:
+        for caracter in cadena:
+            resultado_cadenas=resultado_cadenas+caracter
+    return resultado_cadenas
 
-
+    
 def complementar_cadenas(lista_adn):
     lista_complementos = obtener_complementos(lista_adn)
     cadena_complementos = unir_cadena(lista_complementos)
