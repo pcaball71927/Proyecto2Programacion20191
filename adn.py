@@ -1,6 +1,14 @@
 def obtener_complemento(base):
-    # retorna caracter
-    pass
+    if not es_base(base):
+        Exception("No es una base")
+    if base == "A":
+        return "T"
+    Elif base == "T":
+        return "A"
+    Elif base == "C":
+        return "G"
+    Elif base == "G":
+        return "C"    
 
 
 def generar_cadena_complementaria(adn):
@@ -27,9 +35,13 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
-    pass
 
-
+    for caracter in adn:
+        if not es_base():
+            return False
+    return True    
+        
+    
 def es_base(caracter):
 
     if caracter in ["A","T","C","G"]:
@@ -39,7 +51,11 @@ def es_base(caracter):
 
 
 def es_subcadena(adn1, adn2):
-    pass
+
+    if adn2 in adn1:
+        return True
+    else:
+        return False
 
 
 def reparar_dano(adn, base):
