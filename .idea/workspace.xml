@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2efcc94-1c37-4e35-84c6-2db41577b132" name="Default Changelist" comment="" />
+    <list default="true" id="f07259b7-7404-4387-9b97-d476d7515165" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,13 +13,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="658">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,9 +34,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/gg.py" />
+        <option value="$PROJECT_DIR$/2fun.py" />
         <option value="$PROJECT_DIR$/adn.py" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -38,6 +54,10 @@
       <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2fun.py" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -50,6 +70,99 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Doctests in ">
+    <configuration name="adn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctest obtener_complemento" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/adn.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="obtener_complemento" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_FUNCTION" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Doctests in " type="tests" factoryName="Doctests" nameIsGenerated="true">
+      <module name="Proyecto2Programacion20191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\user\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2fun.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.adn" />
+      <item itemvalue="Python.gg" />
+      <item itemvalue="Python tests.Doctests in " />
+      <item itemvalue="Python tests.Doctest obtener_complemento" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.adn" />
+        <item itemvalue="Python.gg" />
+        <item itemvalue="Python tests.Doctest obtener_complemento" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,16 +177,48 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 05m 31s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 06m 26s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 07m 09s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 09m 44s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 10m 01s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 10m 26s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 11m 26s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 13h 11m 38s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 16h 44m 31s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ - 2019.03.31 at 17h 23m 55s.xml">
+      <configuration name="Doctests in " configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49268293" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49268293" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.50731707" side_tool="true" visible="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -86,5 +231,28 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/adn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2fun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

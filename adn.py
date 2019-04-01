@@ -68,10 +68,20 @@ def reparar_dano(adn, base):
     return reparado
 
 
-
 def obtener_secciones(adn, n):
-    pass
-
+    longitud_cadena_grupos=Len(adn)//n
+    resultado_seccion = []
+    for grupo in range(n):
+        resultado_grupo = ""
+        longitud_cadena_grupo = longitud_cadena_grupos
+        if grupo == n-1 and len(adn) % n != 0:
+            longitud_cadena_grupo = longitud_cadena_grupos + len(adn)%n
+        for caracter in range(longitud_cadena_grupo):
+            indice_caracter_adn = grupo * longitud_cadena_grupos + caracter
+            resultado_grupo = resultado_grupo + adn[indice_caracter_adn]
+        resultado_seccion.append(resultado_grupo)
+    return resultado_seccion
+            
 
 def obtener_complementos(lista_adn):
     lista_complementos = []
