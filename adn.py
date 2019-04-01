@@ -12,6 +12,8 @@ def obtener_complemento(base):
     Traceback (most recent call last):
     Exeption: No es una base
     
+    Genera el complemento correspondiente a una base ingresada
+
     :param base: recibe un complemento para definir su base
     :return: retorna el complemento de la base
     """
@@ -91,6 +93,8 @@ def es_cadena_valida(adn):
     >>> cadena_valida("TSG")
     False
 
+    Valida si una cadena es valida o no
+
     :param adn: String La cadena ingresada a evaluar
     :return: retorna Boolean TRUE si la cadena es valida o FLASE si es incorrecta
     """
@@ -148,6 +152,8 @@ def obtener_secciones(adn, n):
     >>>obtener_secciones('GAGATCTCAGT',2)
     ('GAGAT', 'CTCAGT')
 
+    obtiene secciones de una cadena conforme con la catidad requerida
+
     :param adn:cadena de adn
     :param n: numero de secciones que desea la cadena
     :return:cadena de adn en secciones
@@ -180,6 +186,9 @@ def unir_cadena(lista_adn):
     'ttacatgagat'
     >>>unir_cadena('ggcc', 'ttaa', 'agta')
     'ggccttaaagta'
+
+    Une cadenas de una lsta de adn
+    
     :param lista_adn: list of str que representa la cadenas de adn en una lista 
     :return:str con la union de las dos cadenas
     """
