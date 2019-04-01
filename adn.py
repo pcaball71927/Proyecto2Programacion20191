@@ -174,8 +174,15 @@ def obtener_complementos(lista_adn):
 
 
 def unir_cadena(lista_adn):
-    pass
-
+    """
+    (list of str) -> str
+    >>>unir_cadena('tta', 'catg', 'agat')
+    'ttacatgagat'
+    >>>unir_cadena('ggcc', 'ttaa', 'agta')
+    'ggccttaaagta'
+    :param lista_adn: list of str que representa la cadenas de adn en una lista 
+    :return:str con la union de las dos cadenas
+    """
 
 def complementar_cadenas(lista_adn):
     """
