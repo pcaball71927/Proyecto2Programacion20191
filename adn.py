@@ -22,9 +22,20 @@ def generar_cadena_complementaria(adn):
 
 
 def calcular_correspondencia(adn1, adn2):
-    # retorna num
-    pass
-
+    complementoreal = generar_cadena_complementaria(adn1)
+    print (complementoreal)
+    total = len(adn2)
+    print(total)
+    coincidencias = 0
+    cont = 0 
+    while (cont < total):
+        if(adn2[cont] == complementoreal[cont]):
+            coincidencias = coincidencias + 1
+        cont = cont + 1
+        porcentaje = (coincidencias*100) / total
+        porcentaje = round(porcentaje,2)
+    return porcentaje
+            
 
 def corresponden(adn1, adn2):
     cadena_complementaria = generar_cadena_complementaria(adn1)
