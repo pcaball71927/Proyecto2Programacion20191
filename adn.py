@@ -60,8 +60,7 @@ def es_base(caracter):
 
 
 def es_subcadena(adn1, adn2):
-
-    if adn2 in adn1 or adn1 in adn2:
+    if adn2 in adn1:
         return True
     else:
         return False
