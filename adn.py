@@ -10,7 +10,7 @@ def obtener_complemento(base):
     'G'
     >>> obtener_complemento('R')
     Traceback (most recent call last):
-    Exeption: No es una base
+    Exception: No es una base
     
     Genera el complemento correspondiente a una base ingresada
 
@@ -18,7 +18,7 @@ def obtener_complemento(base):
     :return: retorna el complemento de la base
     """
     if not es_base(base):
-        Exception("No es una base")
+        raise Exception("No es una base")
     if base == "A":
         return "T"
     elif base == "T":
@@ -33,13 +33,13 @@ def generar_cadena_complementaria(adn):
     '''
     (string) -> string
 
-    >>>generar_cadena_complementaria("ATTTCG")
-    "TAAAGC"
+    >>> generar_cadena_complementaria("ATTTCG")
+    'TAAAGC'
 
-    >>>generar_cadena_complementaria("CGTCGA")
-    "GCAGCT"
+    >>> generar_cadena_complementaria("CGTCGA")
+    'GCAGCT'
 
-    >>>generar_cadena_complementaria("CGTX1")
+    >>> generar_cadena_complementaria("CGTX1")
     Traceback (most recent call last):
     Exception: La cadena de ADN ingresada no es valida
 
@@ -51,7 +51,7 @@ def generar_cadena_complementaria(adn):
     :return: string retorna la cadena complementaria de la cadena de ADN ingresada
     '''
     if not es_cadena_valida(adn):
-        Exception("La cadena de ADN ingresada no es valida")
+        raise Exception("La cadena de ADN ingresada no es valida")
     result = ""
     for caracter in adn:
         complemento = obtener_complemento(caracter)
@@ -98,13 +98,13 @@ def corresponden(adn1, adn2):
     '''
     (string, string) -> bool
 
-    >>>corresponden("AGTA,TCAT")
+    >>> corresponden("AGTA","TCAT")
     True
 
-    >>>corresponden("CGCG,GCGA")
+    >>> corresponden("CGCG","GCGA")
     False
 
-    >>>corresponden("ATTCC,TAA")
+    >>> corresponden("ATTCC","TAA")
     False
 
     Valida si una cadena de ADN es complemento de otra cadena de ADN
@@ -124,11 +124,11 @@ def es_cadena_valida(adn):
     """
     (str)-> boolean
 
-    >>> cadena_valida("ACT")
+    >>> es_cadena_valida("ACT")
     True
-    >>> cadena_valida("XYZ")
+    >>> es_cadena_valida("XYZ")
     False
-    >>> cadena_valida("TSG")
+    >>> es_cadena_valida("TSG")
     False
 
     Valida si una cadena es valida o no
@@ -137,7 +137,7 @@ def es_cadena_valida(adn):
     :return: retorna Boolean TRUE si la cadena es valida o FLASE si es incorrecta
     """
     for caracter in adn:
-        if not es_base():
+        if not es_base(caracter):
             return False
     return True
 
@@ -146,11 +146,11 @@ def es_base(caracter):
     """
     (string) -> bool
 
-    >>>es_base("A")
+    >>> es_base("A")
     True
-    >>>es_base("x")
+    >>> es_base("x")
     False
-    >>>es_base("0")
+    >>> es_base("0")
     False
     
     Valida si un caracter ingresado corresponde o no a una base 
@@ -175,12 +175,12 @@ def reparar_dano(adn, base):
     """
     (string, string) -> string
 
-    >>>reparar_dano("ATTTCVG","C")
-    "ATTTCCG"
-    >>>reparar_dano("XXX0TA","C")
-    "CCCCTA"
-    >>>reparar_dano("ATC1","G")
-    "ATCG"
+    >>> reparar_dano("ATTTCVG","C")
+    'ATTTCCG'
+    >>> reparar_dano("XXX0TA","C")
+    'CCCCTA'
+    >>> reparar_dano("ATC1","G")
+    'ATCG'
 
     Repara una cadena de adn de tiene caracteres que no son base reemplazandolos con la base ingresada
 
@@ -189,7 +189,7 @@ def reparar_dano(adn, base):
     :return: retorna string cadena con daños reparados 
     """
     if not es_base(base):
-        Exception("La base ingresada para reparar dano no es una base")
+        raise Exception("La base ingresada para reparar dano no es una base")
     reparado = ""
     for caracter in adn:
         if es_base(caracter):
@@ -200,15 +200,15 @@ def reparar_dano(adn, base):
 
 
 def obtener_secciones(adn, n):
-     """
+    """
     (str, num) -> list of str
 
-     >>>obtener_secciones('AATCGAATCC',5)
-    ('AA','TC', 'GA', 'AT', 'CC')
-    >>>obtener_secciones('ATTGCTAAC',3)
-    ('ATT', 'GCT', 'AAC')
-    >>>obtener_secciones('GAGATCTCAGT',2)
-    ('GAGAT', 'CTCAGT')
+    >>> obtener_secciones('AATCGAATCC',5)
+    ['AA', 'TC', 'GA', 'AT', 'CC']
+    >>> obtener_secciones('ATTGCTAAC',3)
+    ['ATT', 'GCT', 'AAC']
+    >>> obtener_secciones('GAGATCTCAGT',2)
+    ['GAGAT', 'CTCAGT']
 
     obtiene secciones de una cadena conforme con la catidad requerida
 
@@ -216,7 +216,7 @@ def obtener_secciones(adn, n):
     :param n: numero de secciones que desea la cadena
     :return:cadena de adn en secciones
     """
-    longitud_cadena_grupos=Len(adn)//n
+    longitud_cadena_grupos=len(adn)//n
     resultado_seccion = []
     for grupo in range(n):
         resultado_grupo = ""
@@ -232,13 +232,13 @@ def obtener_secciones(adn, n):
 
 def obtener_complementos(lista_adn):
     """
-    (string) -> string
+    (list of string) -> list of string
 
-    >>>obtener_complementos("ATT","CCAG","AC")
-    ("TAA","GGTC","TG")
-    >>>obtener_complementos("CG","ATT")
-    ("ATT","CCAG","AC")
-    >>>obtener_complementos("TT","CC1")
+    >>> obtener_complementos(["ATT","CCAG","AC"])
+    ['TAA', 'GGTC', 'TG']
+    >>> obtener_complementos(["CG","ATT"])
+    ['GC', 'TAA']
+    >>> obtener_complementos(["TT","CC1"])
     Traceback (most recent call last):
     Exception: La cadena de ADN ingresada no es valida
 
@@ -256,33 +256,33 @@ def obtener_complementos(lista_adn):
 
 def unir_cadena(lista_adn):
     """
-    (list of str) -> str
-    >>>unir_cadena('tta', 'catg', 'agat')
-    'ttacatgagat'
-    >>>unir_cadena('ggcc', 'ttaa', 'agta')
-    'ggccttaaagta'
+    (list of string) -> string
+    >>> unir_cadena(['TTA', 'CATG', 'AGAT'])
+    'TTACATGAGAT'
+    >>> unir_cadena(['GGCC', 'TTAA', 'AGTA'])
+    'GGCCTTAAAGTA'
 
     Une cadenas de una lista de adn
     
     :param lista_adn: list of str que representa la cadenas de adn en una lista 
     :return:str con la union de las dos cadenas
     """
-    resultado_cadena = ""
+    resultado_cadenas = ""
     for cadena in lista_adn:
         for caracter in cadena:
-            resultado_cadenas=resultado_cadenas+caracter
+            resultado_cadenas = resultado_cadenas + caracter
     return resultado_cadenas
 
     
 def complementar_cadenas(lista_adn):
     """
-    (string) -> string
+    (list of string) -> string
 
-    >>>complementar_cadenas("ATT","TTA")
-    ("TAAAAT")
-    >>>complementar_cadenas("CT","TA","CC")
-    ("GAATGG")
-    >>>complementar_cadenas("1CC","TATA","TA")
+    >>> complementar_cadenas(["ATT","TTA"])
+    'TAAAAT'
+    >>> complementar_cadenas(["CT","TA","CC"])
+    'GAATGG'
+    >>> complementar_cadenas(["1CC","TATA","TA"])
     Traceback (most recent call last):
     Exception: La cadena de ADN ingresada no es valida
 
