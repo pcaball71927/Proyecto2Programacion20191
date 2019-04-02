@@ -56,9 +56,10 @@ class pruebas(unittest.TestCase):
 
 
     def test_reparar_dano(self):
-        self.assertEqual(reparar_dano())
+        self.assertEqual(reparar_dano('ATTTCVG','C'),"ATTTCCG")
+        self.assertEqual(reparar_dano('XXX0TA','C'),"CCCCTA")
+        self.assertEqual(reparar_dano('ATC1','G'),"ATCG")
         
-
 
     def test_obtener_secciones(self):
         self.assertEqual(f.obtener_secciones("TATACCCG",4),['TA', 'TA', 'CC', 'CG'])
