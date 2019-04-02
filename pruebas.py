@@ -29,7 +29,10 @@ class pruebas(unittest.TestCase):
 
 
     def test_es_cadena_valida(self):
-        pass
+        self.assertEqual(f.es_cadena_valida("ATAT"),True)
+        self.assertEqual(f.es_cadena_valida("CGTA"),True)
+        self.assertEqual(f.es_cadena_valida("CZTa"),False)
+        self.assertEqual(f.es_cadena_valida("123a"),False)
 
 
     def test_es_base(self):
