@@ -10,6 +10,9 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.obtener_complemento("G"),"C")
         self.assertEqual(f.obtener_complemento("T"),"A")
         self.assertEqual(f.obtener_complemento("C"),"G")
+        self.assertRaises(Exception, f.obtener_complemento, 'r')
+        self.assertRaises(Exception, f.obtener_complemento, '1')
+        self.assertRaises(Exception, f.obtener_complemento, '-')
 
 
     def test_generar_cadena_complementaria(self):
