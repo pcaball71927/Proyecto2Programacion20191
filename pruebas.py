@@ -57,7 +57,7 @@ class pruebas(unittest.TestCase):
 
     def test_reparar_dano(self):
         self.assertEqual(reparar_dano())
-        pass
+        
 
 
     def test_obtener_secciones(self):
@@ -68,7 +68,9 @@ class pruebas(unittest.TestCase):
 
 
     def test_obtener_complementos(self):
-        self.assertEqual(f.obtener_complementos(""))
+        self.assertEqual(f.obtener_complementos(['ATT','AC','CCAG']),"TAA","GGTC","TG")
+        self.assertEqual(f.obtener_complementos(['CG','ATT']),"CCAG","AC","ATT")
+        self.assertEqual(Exception, f.obtener_complementos, 'TT','CC1')
 
 
     def test_unir_cadena(self):
