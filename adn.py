@@ -159,10 +159,10 @@ def es_subcadena(adn1, adn2):
     """
     (str, str) -> bool
 
-    >>>es_subcadena('gatc', 'tta')
+    >>> es_subcadena('gatc', 'tta')
     False
-    >>>es_subcadena('gta'), 'atcgta'
-    True
+    >>> es_subcadena('gtattt', 'atcgta')
+    False
 
     :param:adn1:str:primera cadena a comparar
     :param:adn2:str:segunda cadena a comparar
