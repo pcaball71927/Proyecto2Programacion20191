@@ -51,7 +51,10 @@ class pruebas(unittest.TestCase):
 
 
     def test_obtener_secciones(self):
-        pass
+        self.assertEqual(f.obtener_secciones("TATACCCG",4),['TA', 'TA', 'CC', 'CG'])
+        self.assertEqual(f.obtener_secciones("CCGTA",2),['CC', 'GTA'])
+        self.assertEqual(f.obtener_secciones("TATATA",3),['TA', 'TA', 'TA'])
+        self.assertEqual(f.obtener_secciones("CGAATAAAATTTGTC",5),['CGA', 'ATA', 'AAA', 'TTT', 'GTC'])
 
 
     def test_obtener_complementos(self):
