@@ -16,18 +16,23 @@ class pruebas(unittest.TestCase):
 
 
     def test_generar_cadena_complementaria(self):
-        pass
+        self.assertEqual(f.gernerar_cadena_complementaria("ATTTCG"),"TAAAGC")
+        self.assertEqual(f.gernerar_cadena_complementaria("ATGC"),"TACG")
+        self.assertEqual(Exception, f.generar_cadena_complementaria, 'CGTX1')
 
 
     def test_calcular_correspondencia(self):
-        pass
+        self.assertEqual(f.calcular_correspondencia('AGTC','GTCA'),100.0)
+        self.assertEqual(f.calcular_correspondencia('GT','GC'),50.0)
+        self.assertEqual(f.calcular_correspondencia('GCG','AAA'),0.0)
 
 
     def test_corresponden(self):
-        # retorna Bool
-        pass
+        self.assertEqual(f.corresponden("AGTA","TCAT"),True)
+        self.assertEqual(f.corresponden("GCGA","CGCG"),False)
+        self.assertEqual(f.corresponden("TAA","ATTCC"),False)
 
-
+        
     def test_es_cadena_valida(self):
         self.assertEqual(f.es_cadena_valida("ATAT"),True)
         self.assertEqual(f.es_cadena_valida("CGTA"),True)
@@ -36,7 +41,10 @@ class pruebas(unittest.TestCase):
 
 
     def test_es_base(self):
-        pass
+    	self.assertEqual(f.es_base("A"),True)
+    	self.assertEqual(f.es_base("X"),False)
+    	self.assertEqual(f.es_base("C"),True)
+    	self.assertEqual(f.es_base("D"),False)
 
 
     def test_es_subcadena(self):
@@ -47,6 +55,7 @@ class pruebas(unittest.TestCase):
 
 
     def test_reparar_dano(self):
+    	self.assertEqual(reparar_dano())
         pass
 
 
@@ -68,4 +77,5 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.unir_cadena(['GG','TG']),"GGTG")
 
     def test_complementar_cadenas(self):
-        pass
+    	pass
+        
