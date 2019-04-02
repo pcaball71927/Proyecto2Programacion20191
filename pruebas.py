@@ -24,10 +24,11 @@ class pruebas(unittest.TestCase):
 
 
     def test_corresponden(self):
-        # retorna Bool
-        pass
+        self.assertEqual(f.corresponden("AGTA","TCAT"),True)
+        self.assertEqual(f.corresponden("GCGA","CGCG"),False)
+        self.assertEqual(f.corresponden("TAA","ATTCC"),False)
 
-
+        
     def test_es_cadena_valida(self):
         self.assertEqual(f.es_cadena_valida("ATAT"),True)
         self.assertEqual(f.es_cadena_valida("CGTA"),True)
@@ -36,6 +37,7 @@ class pruebas(unittest.TestCase):
 
 
     def test_es_base(self):
+    	
         pass
 
 
@@ -68,4 +70,5 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.unir_cadena(['GG','TG']),"GGTG")
 
     def test_complementar_cadenas(self):
-        pass
+    	pass
+        
