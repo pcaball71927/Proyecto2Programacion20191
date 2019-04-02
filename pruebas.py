@@ -20,7 +20,9 @@ class pruebas(unittest.TestCase):
 
 
     def test_calcular_correspondencia(self):
-        pass
+        self.assertEqual(f.calcular_correspondencia('AGTC','GTCA'),100.0)
+        self.assertEqual(f.calcular_correspondencia('GT','GC'),50.0)
+        self.assertEqual(f.calcular_correspondencia('GCG','AAA'),0.0)
 
 
     def test_corresponden(self):
@@ -51,6 +53,7 @@ class pruebas(unittest.TestCase):
 
 
     def test_reparar_dano(self):
+    	self.assertEqual(reparar_dano())
         pass
 
 
