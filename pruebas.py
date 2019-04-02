@@ -40,7 +40,10 @@ class pruebas(unittest.TestCase):
 
 
     def test_es_subcadena(self):
-        pass
+        self.assertEqual(f.es_subcadena("TATA","TA"),True)
+        self.assertEqual(f.es_subcadena("CGCG","GC"),True)
+        self.assertEqual(f.es_subcadena("CaX0","-0"),False)
+        self.assertEqual(f.es_subcadena("1-a","XX"),False)
 
 
     def test_reparar_dano(self):
