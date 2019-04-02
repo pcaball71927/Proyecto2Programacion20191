@@ -55,9 +55,9 @@ class pruebas(unittest.TestCase):
 
 
     def test_reparar_dano(self):
-        self.assertEqual(reparar_dano('ATTTCVG','C'),"ATTTCCG")
-        self.assertEqual(reparar_dano('XXX0TA','C'),"CCCCTA")
-        self.assertEqual(reparar_dano('ATC1','G'),"ATCG")
+        self.assertEqual(f.reparar_dano('ATTTCVG','C'),"ATTTCCG")
+        self.assertEqual(f.reparar_dano('XXX0TA','C'),"CCCCTA")
+        self.assertEqual(f.reparar_dano('ATC1','G'),"ATCG")
         
 
     def test_obtener_secciones(self):
@@ -68,8 +68,8 @@ class pruebas(unittest.TestCase):
 
 
     def test_obtener_complementos(self):
-        self.assertEqual(f.obtener_complementos(['ATT','AC','CCAG']),"TAA","GGTC","TG")
-        self.assertEqual(f.obtener_complementos(['CG','ATT']),"CCAG","AC","ATT")
+        self.assertEqual(f.obtener_complementos(['ATT','AC','CCAG']),['TAA','GGTC','TG'])
+        self.assertEqual(f.obtener_complementos(['CG','ATT']),['CCAG,'AC'','ATT'])
         self.assertRaises(Exception, f.obtener_complementos, ['TT','CC1'])
 
 
