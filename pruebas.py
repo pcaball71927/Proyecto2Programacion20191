@@ -16,15 +16,16 @@ class pruebas(unittest.TestCase):
 
 
     def test_generar_cadena_complementaria(self):
-        self.assertEqual(f.gernerar_cadena_complementaria("ATTTCG"),"TAAAGC")
-        self.assertEqual(f.gernerar_cadena_complementaria("ATGC"),"TACG")
-        self.assertEqual(Exception, f.generar_cadena_complementaria, 'CGTX1')
+        self.assertEqual(f.generar_cadena_complementaria("ATTTCG"),"TAAAGC")
+        self.assertEqual(f.generar_cadena_complementaria("ATGC"),"TACG")
+        self.assertRaises(Exception, f.generar_cadena_complementaria, 'CGTX1')
 
 
     def test_calcular_correspondencia(self):
-        self.assertEqual(f.calcular_correspondencia('AGTC','GTCA'),100.0)
-        self.assertEqual(f.calcular_correspondencia('GT','GC'),50.0)
+        self.assertEqual(f.calcular_correspondencia('AGTC','GTCA'),0.0)
+        self.assertEqual(f.calcular_correspondencia('GT','CT'),50.0)
         self.assertEqual(f.calcular_correspondencia('GCG','AAA'),0.0)
+        self.assertRaises(Exception, f.calcular_correspondencia, 'S3TTT',"ATT3")
 
 
     def test_corresponden(self):
@@ -55,7 +56,7 @@ class pruebas(unittest.TestCase):
 
 
     def test_reparar_dano(self):
-    	self.assertEqual(reparar_dano())
+        self.assertEqual(reparar_dano())
         pass
 
 
