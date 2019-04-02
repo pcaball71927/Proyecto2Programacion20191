@@ -16,7 +16,9 @@ class pruebas(unittest.TestCase):
 
 
     def test_generar_cadena_complementaria(self):
-        pass
+        self.assertEqual(f.gernerar_cadena_complementaria("ATTTCG"),"TAAAGC")
+        self.assertEqual(f.gernerar_cadena_complementaria("ATGC"),"TACG")
+        self.assertEqual(Exception, f.generar_cadena_complementaria, 'CGTX1')
 
 
     def test_calcular_correspondencia(self):
