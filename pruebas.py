@@ -61,9 +61,11 @@ class pruebas(unittest.TestCase):
         pass
 
 
-    def test_unir_cadena(lista_adn):
-        pass
+    def test_unir_cadena(self):
+        self.assertEqual(f.unir_cadena(['TA','CG']),"TACG")
+        self.assertEqual(f.unir_cadena(['CA','GG']),"CAGG")
+        self.assertEqual(f.unir_cadena(['TT','CG']),"TTCG")
+        self.assertEqual(f.unir_cadena(['GG','TG']),"GGTG")
 
-
-    def test_complementar_cadenas(lista_adn):
+    def test_complementar_cadenas(self):
         pass
