@@ -161,6 +161,18 @@ def es_base(caracter):
 
 
 def es_subcadena(adn1, adn2):
+    """
+    (str, str) -> bool
+
+    >>>es_subcadena('gatc', 'tta')
+    False
+    >>>es_subcadena('gta'), 'atcgta'
+    True
+
+    :param:adn1:str:primera cadena a comparar
+    :param:adn2:str:segunda cadena a comparar
+    :return:bool:verificacion si una es subcadena de la otra
+    """
     if adn2 in adn1:
         return True
     else:
