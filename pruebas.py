@@ -67,7 +67,7 @@ class pruebas(unittest.TestCase):
 
 
     def test_obtener_complementos(self):
-        pass
+        self.assertEqual(f.obtener_complementos(""))
 
 
     def test_unir_cadena(self):
@@ -77,5 +77,10 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.unir_cadena(['GG','TG']),"GGTG")
 
     def test_complementar_cadenas(self):
-    	pass
+    	self.assertEqual(f.complementar_cadenas(['ATT','TTA']),"TAAAAT")
+    	self.assertEqual(f.complementar_cadenas(['TA','CC','CT']),"GAATGG")
+    	self.assertEqual(Exception, f.complementar_cadenas, '1CC')
+    	self.assertEqual(Exception, f.complementar_cadenas, 'TATA')
+    	self.assertEqual(Exception, f.complementar_cadenas, 'TA')
+    	
         
