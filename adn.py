@@ -79,19 +79,15 @@ def calcular_correspondencia(adn1, adn2):
     :param adn2: str:segunda cadena recibida para comparar su porcentaje
     :return:num: retorna el porcentaje total en termino de reales
     """
-    complementoreal = generar_cadena_complementaria(adn1)
-    print (complementoreal)
-    total = len(adn2)
-    print(total)
-    coincidencias = 0
-    cont = 0 
-    while (cont < total):
-        if(adn2[cont] == complementoreal[cont]):
-            coincidencias = coincidencias + 1
-        cont = cont + 1
-        porcentaje = (coincidencias*100) / total
-        porcentaje = round(porcentaje,2)
-    return porcentaje
+    caracter_correspondiente = 0.0
+    cadena_menor = min(len(adn1),len(adn2))
+    for indice in range(cadena_menor):
+        complemento_caracter_adn1 = obtener_complemento(adn1[indice])
+        if adn2[indice] == complemento_caracter_adn1:
+            caracter_correspondiente = caracter_correspondiente + 1.0
+    cadena_mayor = max(len(adn1),len(adn2))
+    porcentaje_correspondencia = 100.0 * caracter_correspondiente / cadena_mayor
+    return porcentaje_correspondencia
     
 
 def corresponden(adn1, adn2):
