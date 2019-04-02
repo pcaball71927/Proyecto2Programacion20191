@@ -1,4 +1,3 @@
-
 import unittest
 import adn as f
 
@@ -71,7 +70,7 @@ class pruebas(unittest.TestCase):
     def test_obtener_complementos(self):
         self.assertEqual(f.obtener_complementos(['ATT','AC','CCAG']),"TAA","GGTC","TG")
         self.assertEqual(f.obtener_complementos(['CG','ATT']),"CCAG","AC","ATT")
-        self.assertRaises(Exception, f.obtener_complementos, 'TT','CC1')
+        self.assertRaises(Exception, f.obtener_complementos, ['TT','CC1'])
 
 
     def test_unir_cadena(self):
@@ -83,8 +82,6 @@ class pruebas(unittest.TestCase):
     def test_complementar_cadenas(self):
     	self.assertEqual(f.complementar_cadenas(['ATT','TTA']),"TAAAAT")
     	self.assertEqual(f.complementar_cadenas(['TA','CC','CT']),"GAATGG")
-    	self.assertRaises(Exception, f.complementar_cadenas, '1CC')
-    	self.assertRaises(Exception, f.complementar_cadenas, 'TATA')
-    	self.assertRaises(Exception, f.complementar_cadenas, 'TA')
-    	
-        
+    	self.assertRaises(Exception, f.complementar_cadenas, ['TAX','-CC','0T'])
+    	self.assertRaises(Exception, f.complementar_cadenas, ['01','XX','C0T'])
+    	self.assertRaises(Exception, f.complementar_cadenas, ['-P','WW','C07'])
