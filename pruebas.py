@@ -37,8 +37,10 @@ class pruebas(unittest.TestCase):
 
 
     def test_es_base(self):
-    	
-        pass
+    	self.assertEqual(f.es_base("A"),True)
+    	self.assertEqual(f.es_base("X"),False)
+    	self.assertEqual(f.es_base("C"),True)
+    	self.assertEqual(f.es_base("D"),False)
 
 
     def test_es_subcadena(self):
