@@ -81,7 +81,7 @@ class pruebas(unittest.TestCase):
 
     def test_complementar_cadenas(self):
     	self.assertEqual(f.complementar_cadenas(['ATT','TTA']),"TAAAAT")
-    	self.assertEqual(f.complementar_cadenas(['TA','CC','CT']),"GAATGG")
+    	self.assertEqual(f.complementar_cadenas(['TA','CC','CT']),"ATGGGA")
     	self.assertRaises(Exception, f.complementar_cadenas, ['TAX','-CC','0T'])
     	self.assertRaises(Exception, f.complementar_cadenas, ['01','XX','C0T'])
     	self.assertRaises(Exception, f.complementar_cadenas, ['-P','WW','C07'])
