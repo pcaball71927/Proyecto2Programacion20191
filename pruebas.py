@@ -69,7 +69,7 @@ class pruebas(unittest.TestCase):
 
     def test_obtener_complementos(self):
         self.assertEqual(f.obtener_complementos(['ATT','AC','CCAG']),['TAA','GGTC','TG'])
-        self.assertEqual(f.obtener_complementos(['CG','ATT']),['CCAG,'AC'','ATT'])
+        self.assertEqual(f.obtener_complementos(['CG','ATT']),['CCAG','AC','ATT'])
         self.assertRaises(Exception, f.obtener_complementos, ['TT','CC1'])
 
 
