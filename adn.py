@@ -219,7 +219,7 @@ def obtener_secciones(adn, n):
     :param n: numero de secciones que desea la cadena
     :return:cadena de adn en secciones
     """
-    longitud_cadena_grupos=len(adn)//n
+    longitud_cadena_grupos = len(adn)//n
     resultado_seccion = []
     for grupo in range(n):
         resultado_grupo = ""
@@ -227,7 +227,7 @@ def obtener_secciones(adn, n):
             indice_caracter_adn = grupo * longitud_cadena_grupos + caracter
             resultado_grupo = resultado_grupo + adn[indice_caracter_adn]
         resultado_seccion.append(resultado_grupo)
-    if n*longitud_cadena_grupos < len(adn):
+    if len(adn)%n != 0:
         inicio_residuo = n*longitud_cadena_grupos
         fin_residuo = len(adn)
         ultimo_grupo = n-1
