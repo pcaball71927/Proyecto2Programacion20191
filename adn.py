@@ -223,13 +223,16 @@ def obtener_secciones(adn, n):
     resultado_seccion = []
     for grupo in range(n):
         resultado_grupo = ""
-        longitud_cadena_grupo = longitud_cadena_grupos
-        if grupo == n-1 and len(adn) % n != 0:
-            longitud_cadena_grupo = longitud_cadena_grupos + len(adn)%n
-        for caracter in range(longitud_cadena_grupo):
+        for caracter in range(longitud_cadena_grupos):
             indice_caracter_adn = grupo * longitud_cadena_grupos + caracter
             resultado_grupo = resultado_grupo + adn[indice_caracter_adn]
         resultado_seccion.append(resultado_grupo)
+    if n*longitud_cadena_grupos < len(adn):
+        inicio_residuo = n*longitud_cadena_grupos
+        fin_residuo = len(adn)
+        ultimo_grupo = n-1
+        for indice in range(inicio_residuo, fin_residuo):
+            resultado_seccion[ultimo_grupo] = resultado_seccion[ultimo_grupo] + adn[indice]
     return resultado_seccion
 
 
